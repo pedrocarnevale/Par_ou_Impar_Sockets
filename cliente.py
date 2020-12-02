@@ -51,9 +51,9 @@ while(run):
 
     if jogo.ambos_jogaram():
         if (jogo.determina_vencedor() == 1 and jogador == 1) or (jogo.determina_vencedor() == 0 and jogador == 0):
-            vitoria=False
-        else:
             vitoria=True
+        else:
+            vitoria=False
         jogo_amigo=jogo.jogada[jogador][1]
         jogo_adversario=jogo.jogada[not jogador][1]
         redesenhar_tela_resultado(vitoria,jogo_amigo,jogo_adversario)
